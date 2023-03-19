@@ -24,6 +24,6 @@ public class Movie {
     private String poster;
     private List<String> genres;
     private List<String> backdrops;
-    @DocumentReference
+    @DocumentReference // database will only store id of the review, reviews will be stored in sep. col.
     private List<Review> reviewIds;
 }
